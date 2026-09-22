@@ -39,7 +39,12 @@ npm run lint
 
 # 生成生产构建到 dist/
 npm run build
+
+# 运行浏览器验收并生成截图到 artifact/
+npm run test:screenshots
 ```
+
+`test:screenshots` 会使用 Playwright 启动一个临时本地服务，执行创建、编辑、跨列拖拽、主题切换、删除确认及刷新后删除状态等流程，并生成验收截图。
 
 ## 数据存储
 
